@@ -3,5 +3,8 @@
 # Please adapt and uncomment the following lines:
 	name = Alexander Ivanov
 	email = oshliaer@gmail.com
+
+# To tell Git to use it as the default message that appears in your editor when you run git commit, set the commit.template configuration value:
+# git config --global commit.template ~/.gitmessage.txt
 [commit]
 	template = ~/.config/user/.gitmessage.txt
