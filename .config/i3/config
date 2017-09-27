@@ -31,6 +31,8 @@ font pango::DejaVuSansMonoforPowerline 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+default_orientation vertical
+workspace_layout stacking
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
@@ -181,6 +183,9 @@ bindsym Shift+XF86Tools exec vlc
 # https://stackoverflow.com/a/43156436/1393023
 bindsym Shift+XF86AudioPlay "exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.vlc /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
 bindsym Shift+XF86AudioStop "exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.vlc /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
+
+# bindsym Shift+XF86AudioRaiseVolume "exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.vlc /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Volume(0.2)"
+
 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5%
