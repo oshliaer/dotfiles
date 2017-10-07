@@ -178,6 +178,18 @@ mode "move" {
         bindsym Escape mode "default"
 }
 
+# Enable/disable caps mode
+mode "caps" {
+        bindsym Caps_Lock mode "default"
+}
+bindsym Caps_Lock mode "caps"
+
+# Enable/disable numeric keyboard 
+mode "num" {
+        bindsym Num_Lock mode "default"
+}
+bindsym Num_Lock mode "num"
+
 bindsym Shift+XF86Tools exec vlc
 
 # https://stackoverflow.com/a/43156436/1393023
